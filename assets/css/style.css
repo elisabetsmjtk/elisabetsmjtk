@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap" ); 
+
+/* .dropdown{
+  font-family: 'poppins', sans-serif;
+} */
+
+.navbar{
+  font-family: 'poppins', sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 767px) {
+  .dopdown{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+
+.body{
+  font-family: 'poppins', sans-serif;
+  padding-top: 70px;
+
+}
+
+.home {
+  margin-top: 150px;
+}
+
+.home__blob {
+  width: 200px;
+  height: auto;
+  fill: var(--first-color);
+}
+
+.home__blob-img {
+  width: 220px;
+  height: auto;
+}
+
+.home__img {
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+/* Efek button responsif */
+.btn-info {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-info::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+  transition: width 0.3s, height 0.3s;
+}
+
+.btn-info:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+/* transisi visual */
+.btn-info {
+  transition: transform 0.3s;
+}
+
+.btn-info:hover {
+  transform: scale(1.1); 
+}
+
+

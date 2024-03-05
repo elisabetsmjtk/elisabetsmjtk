@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @elisabetsmjtk
 - 👀 I’m interested in UI UX Design, Laravel
-- 🌱 I’m currently learning MySQL, Java
+- 🌱 I’m currently learning AI, and Cyber Security
 - 💞️ I’m looking to collaborate on IT project
 - 📫 Reach me on github 
 
