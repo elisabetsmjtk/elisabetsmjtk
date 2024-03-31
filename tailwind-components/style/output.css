@@ -1260,6 +1260,10 @@ body {
     justify-content: space-between;
   }
 
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
   .lg\:p-5 {
     padding: 1.25rem;
   }
