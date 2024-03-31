@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl shadow-2xl;
+  }
+}
+/* @layer components {
+    .main-title
+    {
+        @apply text-4xl text-rose-500-500 font-semibold text-center;
+    }
+} */
