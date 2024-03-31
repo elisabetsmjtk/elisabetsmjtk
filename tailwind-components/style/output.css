@@ -546,6 +546,8 @@ video {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 640px) {
@@ -636,11 +638,6 @@ video {
   margin-right: auto;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -711,38 +708,6 @@ video {
 
 .mt-60 {
   margin-top: 15rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.-mt-8 {
-  margin-top: -2rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.-mt-52 {
-  margin-top: -13rem;
-}
-
-.mb-80 {
-  margin-bottom: 20rem;
-}
-
-.-mb-20 {
-  margin-bottom: -5rem;
-}
-
-.-mb-2 {
-  margin-bottom: -0.5rem;
-}
-
-.-mb-24 {
-  margin-bottom: -6rem;
 }
 
 .block {
@@ -918,11 +883,6 @@ video {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
 .fill-current {
   fill: currentColor;
 }
@@ -984,18 +944,6 @@ video {
   padding-bottom: 3rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .pt-36 {
   padding-top: 9rem;
 }
@@ -1055,6 +1003,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -1095,32 +1048,31 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* .dropdown {
-  @apply w-[15px] h-[2px] block bg-black ;
+/* @layer components {
+    .main-title
+    {
+        @apply text-4xl text-rose-500-500 font-semibold text-center;
+    }
 } */
 
-/* .rotate-180 {
-  transform: rotate(180deg);
-} */
+.hover\:border-primary:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
 
-/* #dropdownlist {
-  display: none;
-} */
-
-/* #dropdown {
-  position: relative;
-  display: none;
-  top: 100%; /* Adjust as needed */
-
-/* Style untuk elemen dropdown saat aktif */
-
-/* #dropdownlist.active {
-  display: block;
-} */
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
 
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1173,16 +1125,13 @@ body {
     position: static;
   }
 
-  .lg\:row-span-2 {
-    grid-row: span 2 / span 2;
-  }
-
-  .lg\:row-auto {
-    grid-row: auto;
-  }
-
   .lg\:m-28 {
     margin: 7rem;
+  }
+
+  .lg\:mx-28 {
+    margin-left: 7rem;
+    margin-right: 7rem;
   }
 
   .lg\:mx-3 {
@@ -1200,42 +1149,12 @@ body {
     margin-right: 1.25rem;
   }
 
-  .lg\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .lg\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .lg\:mx-7 {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
-  }
-
-  .lg\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .lg\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
-  .lg\:mx-28 {
-    margin-left: 7rem;
-    margin-right: 7rem;
+  .lg\:-mb-24 {
+    margin-bottom: -6rem;
   }
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mb-24 {
-    margin-bottom: 6rem;
   }
 
   .lg\:mb-5 {
@@ -1244,6 +1163,10 @@ body {
 
   .lg\:ml-\[50px\] {
     margin-left: 50px;
+  }
+
+  .lg\:mr-4 {
+    margin-right: 1rem;
   }
 
   .lg\:mt-2 {
@@ -1260,42 +1183,6 @@ body {
 
   .lg\:mt-\[63px\] {
     margin-top: 63px;
-  }
-
-  .lg\:mr-4 {
-    margin-right: 1rem;
-  }
-
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .lg\:mt-80 {
-    margin-top: 20rem;
-  }
-
-  .lg\:-mt-52 {
-    margin-top: -13rem;
-  }
-
-  .lg\:mt-52 {
-    margin-top: 13rem;
-  }
-
-  .lg\:mt-auto {
-    margin-top: auto;
-  }
-
-  .lg\:mt-14 {
-    margin-top: 3.5rem;
-  }
-
-  .lg\:mt-28 {
-    margin-top: 7rem;
-  }
-
-  .lg\:-mb-24 {
-    margin-bottom: -6rem;
   }
 
   .lg\:block {
@@ -1353,14 +1240,6 @@ body {
     flex-direction: row;
   }
 
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
   .lg\:items-center {
     align-items: center;
   }
@@ -1381,8 +1260,8 @@ body {
     justify-content: space-between;
   }
 
-  .lg\:justify-evenly {
-    justify-content: space-evenly;
+  .lg\:overflow-hidden {
+    overflow: hidden;
   }
 
   .lg\:p-5 {
@@ -1419,25 +1298,8 @@ body {
     padding-bottom: 0.75rem;
   }
 
-  .lg\:py-36 {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-  }
-
   .lg\:pt-14 {
     padding-top: 3.5rem;
-  }
-
-  .lg\:pt-20 {
-    padding-top: 5rem;
-  }
-
-  .lg\:pt-4 {
-    padding-top: 1rem;
-  }
-
-  .lg\:pt-48 {
-    padding-top: 12rem;
   }
 
   .lg\:text-5xl {
