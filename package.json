@@ -4,6 +4,7 @@
   },
   "scripts": {
     "tailwind-components": "npx tailwindcss -i tailwind-components/style/input.css -o tailwind-components/style/output.css  --watch",
-    "tailwind": "npx tailwindcss -i tailwind/style/input.css -o tailwind/style/output.css --watch"
+    "tailwind": "npx tailwindcss -i tailwind/style/input.css -o tailwind/style/output.css --watch",
+    "test_tailwind": "npx tailwindcss -i test_tailwind/style/input.css -o test_tailwind/style/output.css --watch"
   }
 }
